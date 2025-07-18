@@ -47,6 +47,64 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get last 10 transactions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.etherscan.io/api?module=account&action=txlist&address=0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045&startblock=0&endblock=99999999&page=1&offset=10&sort=desc&apikey=1T44I8AJQ81DP7TN4SM1EZ3WBNYM84XBX3\n",
+					"protocol": "https",
+					"host": [
+						"api",
+						"etherscan",
+						"io"
+					],
+					"path": [
+						"api"
+					],
+					"query": [
+						{
+							"key": "module",
+							"value": "account"
+						},
+						{
+							"key": "action",
+							"value": "txlist"
+						},
+						{
+							"key": "address",
+							"value": "0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045"
+						},
+						{
+							"key": "startblock",
+							"value": "0"
+						},
+						{
+							"key": "endblock",
+							"value": "99999999"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "offset",
+							"value": "10"
+						},
+						{
+							"key": "sort",
+							"value": "desc"
+						},
+						{
+							"key": "apikey",
+							"value": "1T44I8AJQ81DP7TN4SM1EZ3WBNYM84XBX3\n"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
